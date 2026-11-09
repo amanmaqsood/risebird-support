@@ -1,26 +1,54 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy Policy · Risebird</title>
-<style>body{font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:680px;margin:40px auto;padding:0 20px;color:#111;background:#f3f3f3}a{color:#c23e0a}h1{font-size:32px;margin-bottom:4px}h2{margin-top:28px}nav a{margin-right:16px}main{background:#fff;border-radius:18px;padding:8px 28px 24px}</style></head>
-<body><nav><a href="./">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav><main><h1>Privacy Policy</h1>
-<p>Last updated: 29 October 2026</p>
-<p>Risebird is an alarm clock. We built it to collect as little as possible.</p>
-<h2>What stays on your phone</h2>
-<ul>
-<li>Your alarms, missions, sounds and wake history</li>
-<li>Your answers to the setup questions</li>
-<li>Camera frames and motion data used by missions. These are processed on the device in real time and are never stored or uploaded.</li>
-</ul>
-<h2>What leaves your phone, and why</h2>
-<ul>
-<li><strong>Flock (optional).</strong> If you join a flock, we store your display name, your flock memberships, your daily check-ins (wake time, rise time, streak) and a push token so friends can nudge you. Sign in with Apple (iPhone) shares only an anonymous user id and, if you allow it, your name.</li>
-<li><strong>Purchases.</strong> Payments are handled entirely by Apple (App Store) or Google (Google Play). We never see your card or account details; the app only checks with the store which plan you have.</li>
-<li><strong>Support chat.</strong> Messages you send us, any photos you attach, and basic app details (app version, device model, iOS version, plan, number of alarms, streak) so we can help.</li>
-<li><strong>Analytics.</strong> Risebird does not send usage analytics. There is no advertising identifier and no cross-app tracking.</li>
-</ul>
-<h2>Your choices</h2>
-<ul>
-<li>Skip Flock and nothing social is stored.</li>
-<li>Delete your account any time in Settings. This removes your profile, memberships, check-ins, push token and support chats from our servers. Alarms and history on your phone stay.</li>
-<li>Deleting the app removes everything stored on the phone.</li>
-</ul>
-<h2>Contact</h2>
-<p>Questions: use Settings → Support in the app, or open an issue at <a href="https://github.com/amanmaqsood/risebird-support/issues">https://github.com/amanmaqsood/risebird-support/issues</a>.</p></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Privacy Policy · Risebird</title>
+  <style>
+    body{font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:680px;margin:40px auto;padding:0 20px;color:#111;background:#f3f3f3}
+    a{color:#c23e0a}h1{font-size:32px;margin-bottom:4px}h2{margin-top:28px}nav a{margin-right:16px}main{background:#fff;border-radius:18px;padding:8px 28px 24px}
+  </style>
+</head>
+<body>
+  <nav><a href="./">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p>Last updated: 9 November 2026</p>
+    <p>Risebird is a mission alarm clock. Core alarms work locally without an account.</p>
+
+    <h2>What stays on your device</h2>
+    <ul>
+      <li>Your alarms, mission answers, custom sounds, setup answers and wake history stay on your device unless you explicitly use cloud backup.</li>
+      <li>Camera frames and motion or step data used by missions are processed on the device in real time. Risebird does not store or upload those camera frames or sensor samples.</li>
+      <li>Custom alarm audio is not included in cloud backup.</li>
+    </ul>
+
+    <h2>Optional account and cloud restore</h2>
+    <p>You can use email, Google or Apple sign-in for account recovery and optional cloud features. Depending on the method you choose, we receive an account identifier, email address and any name you choose to provide.</p>
+    <p>If you choose cloud backup, Risebird uploads a versioned copy of your alarm settings, wake history and related app progress to our Supabase backend. Restored alarms stay disabled until you review them on the new device.</p>
+
+    <h2>Other data that may leave your device</h2>
+    <ul>
+      <li><strong>Flock (optional).</strong> We store your display name, memberships, shared schedules, wake check-ins and a push token so accepted members can coordinate alarms and send nudges.</li>
+      <li><strong>Risebird assistant (optional).</strong> After you opt in, the current typed or transcribed request and the minimum relevant alarm context are sent through Risebird's server to Google Gemini to prepare an alarm preview or answer a Risebird feature question. Risebird does not send raw audio, photos or your entire alarm history, and does not keep a server-side chat history by default. An alarm does not change until you confirm its preview.</li>
+      <li><strong>Purchases.</strong> Apple or Google processes payment details. Risebird sends the store transaction identifier or purchase token to its server and the relevant store only to verify your entitlement and prevent duplicate claims. We do not receive your card details.</li>
+      <li><strong>Support chat.</strong> We store messages you send, optional photos you attach and basic troubleshooting context such as app version, device model, operating-system version, plan, enabled-alarm count and streak.</li>
+      <li><strong>Analytics.</strong> The current production build does not send usage analytics, advertising identifiers or cross-app tracking data.</li>
+    </ul>
+
+    <h2>Your choices and deletion</h2>
+    <ul>
+      <li>You can use core alarms without signing in, cloud backup, Flock or the remote assistant.</li>
+      <li>You can delete a support conversation from the app.</li>
+      <li>You can delete your cloud account in Settings. This removes the account's profile, memberships, check-ins, schedules, push tokens, support messages and attachments, cloud backups, assistant allowance records and verified-entitlement records. Alarms and history already stored locally remain usable.</li>
+      <li>Deleting the app removes local data from that device, but does not itself delete an optional cloud account. Delete the account in Settings first if you want both removed.</li>
+    </ul>
+
+    <h2>Service providers</h2>
+    <p>Risebird uses Supabase for optional accounts and cloud features, Firebase Cloud Messaging for optional Flock notifications, Google Gemini for the optional assistant, and Apple or Google for purchases. Data is sent over encrypted connections.</p>
+
+    <h2>Contact</h2>
+    <p>Questions: use Settings → Support in the app, or open an issue at <a href="https://github.com/amanmaqsood/risebird-support/issues">github.com/amanmaqsood/risebird-support/issues</a>.</p>
+  </main>
+</body>
+</html>
